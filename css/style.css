@@ -6,7 +6,36 @@
 }
 
 .container {
-  width: 80% auto;
+  width: 80%;
+  margin: 25px auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  width: 100%;
 }
 
 /**********MAIN**********/
+
+/*layout clearfix*/
+main .clearfix section {
+  float: left;
+}
+
+.box-left, .box-right {
+  width: 32%;
+}
+
+.box-center {
+  width: 32%;
+  margin: 0 2%;
+}
+
+.clearfix {
+  margin: 25px 0; 
+}
