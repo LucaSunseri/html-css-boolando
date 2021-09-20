@@ -100,3 +100,16 @@ main .clearfix section {
 .price-sale, .sale {
   font-weight: bold;
 }
+
+/* hover img */
+.img.hover {
+  display: none;
+}
+
+.img-left:hover .img.basic, .img-center:hover .img.basic, .img-right:hover .img.basic {
+  display: none;
+}
+
+.img-left:hover .img.hover, .img-center:hover .img.hover, .img-right:hover .img.hover  {
+  display: block;
+}
