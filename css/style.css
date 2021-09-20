@@ -20,6 +20,10 @@ img {
   width: 100%;
 }
 
+.img-left, .img-center, .img-right {
+  position: relative;
+}
+
 /**********MAIN**********/
 
 /*layout clearfix*/
@@ -39,3 +43,43 @@ main .clearfix section {
 .clearfix {
   margin: 25px 0; 
 }
+
+/*layout img*/
+.heart::after {
+ content: '\2665';
+ position: absolute;
+ top: 30px;
+ right: 0;
+ background-color: white;
+ font-size: 35px;
+ padding: 2px 10px;
+}
+
+.sale-red, .eco-green {
+  position: absolute;
+  bottom: 25px;
+  color: white;
+  font-weight: bold;
+  padding: 3px 5px;
+}
+
+.sale-red {
+  left: 0;
+  background-color: red;
+ 
+}
+
+.sale-red::after {
+  content: '\0025';
+  color: white;
+}
+
+.eco-green {
+  left: 50px;
+  background-color: green;
+}
+
+.second-row .box-right .eco-green {
+  left: 0;
+}
+
