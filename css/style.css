@@ -24,6 +24,10 @@ img {
   position: relative;
 }
 
+.price-sale {
+  color: red;
+}
+
 /**********MAIN**********/
 
 /*layout clearfix*/
@@ -83,3 +87,16 @@ main .clearfix section {
   left: 0;
 }
 
+/* layout caption */
+.price-sale:after, .sale::after {
+  content: ' \20AC';
+}
+
+.sale {
+  color: black;
+  text-decoration: line-through;
+}
+
+.price-sale, .sale {
+  font-weight: bold;
+}
