@@ -20,12 +20,8 @@ img {
   width: 100%;
 }
 
-.img-left, .img-center, .img-right {
+.card {
   position: relative;
-}
-
-.price-sale {
-  color: red;
 }
 
 /**********MAIN**********/
@@ -55,22 +51,29 @@ main .clearfix section {
  top: 30px;
  right: 0;
  background-color: white;
- font-size: 35px;
+ font-size: 25px;
  padding: 2px 10px;
 }
 
-.sale-red, .eco-green {
+.tag {
   position: absolute;
-  bottom: 25px;
+  bottom: 15px;
+  left: 0;
   color: white;
   font-weight: bold;
-  padding: 3px 5px;
+}
+
+.sale-red, .eco-green {
+  padding: 2px;
 }
 
 .sale-red {
-  left: 0;
   background-color: red;
- 
+  margin-right: 4px;
+}
+
+.eco-green {
+  background-color: green;
 }
 
 .sale-red::after {
@@ -78,18 +81,15 @@ main .clearfix section {
   color: white;
 }
 
-.eco-green {
-  left: 50px;
-  background-color: green;
-}
-
-.second-row .box-right .eco-green {
-  left: 0;
-}
-
 /* layout caption */
 .price-sale:after, .sale::after {
   content: ' \20AC';
+}
+
+.price-sale {
+  color: red;
+  margin-right: 4px;
+  font-weight: bold;
 }
 
 .sale {
@@ -97,19 +97,16 @@ main .clearfix section {
   text-decoration: line-through;
 }
 
-.price-sale, .sale {
-  font-weight: bold;
-}
 
 /* hover img */
 .img.hover {
   display: none;
 }
 
-.img-left:hover .img.basic, .img-center:hover .img.basic, .img-right:hover .img.basic {
+.card:hover .img.basic {
   display: none;
 }
 
-.img-left:hover .img.hover, .img-center:hover .img.hover, .img-right:hover .img.hover  {
-  display: block;
+.card:hover .img.hover {
+  display: inline-block;
 }
